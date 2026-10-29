@@ -1,0 +1,31 @@
+name: Run Lead Scraper
+
+on:
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Abhängigkeiten installieren
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Scraper ausführen
+        run: python main.py
+
+      - name: Excel-Ergebnis als Artefakt hochladen
+        uses: actions/upload-artifact@v4
+        with:
+          name: culligan-leads-romandie
+          path: output/culligan_leads_romandie.xlsx
