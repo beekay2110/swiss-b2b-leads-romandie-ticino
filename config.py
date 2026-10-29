@@ -1,7 +1,7 @@
 import os
 
-# Google Places API Key (aus Umweltvariable oder direkt eintragen)
-API_KEY = os.getenv("GOOGLE_PLACES_API_KEY", "DEIN_API_KEY_HIER")
+# Google Places API Key
+API_KEY = "AIzaSyCm6_DfNZZW1hctQHZf2V3WNpls2TpaIjQ"
 
 # Relevanteste Städte & Hauptorte der Romandie (VD, GE, VS, NE, FR, JU, BE-FR)
 TARGET_CITIES = [
