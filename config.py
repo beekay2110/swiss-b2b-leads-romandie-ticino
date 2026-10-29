@@ -1,6 +1,6 @@
 import os
 
-API_KEY = "AIzaSy..."  # Deinen API Key hier einfügen
+API_KEY = "AIzaSyCm6_DfNZZW1hctQHZf2V3WNpls2TpaIjQ"  # Deinen API Key hier einfügen
 
 TARGET_CITIES = [
     "Genève", "Lausanne", "Nyon", "Morges", "Vevey", "Montreux",
